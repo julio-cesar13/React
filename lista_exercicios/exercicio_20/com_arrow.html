@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var union = (a,b) =>{
+            let cont = a.length;
+            for(let i = 0; i < b.length; i++){
+                a[cont++] = b[i];
+            }
+
+            return a;
+        }
+
+        var arrayA = [];
+        var num = prompt("Coloque o numero no array A(Digite f se quiser encerrar)");
+
+        let i = 0;
+        while(num!= 'f'){
+            arrayA[i] = num;
+            i++;
+            num = prompt("Digite a palavra a ser colocada no array A(Digite f se quiser encerrar)");  
+        }
+
+        var arrayB =[];
+        num = prompt("Coloque o numero no array B(Digite f se quiser encerrar)");
+        i = 0;
+        while(num!= 'f'){
+            arrayB[i] = num;
+            i++;
+            num = prompt("Digite a palavra a ser colocada no array B(Digite f se quiser encerrar)");  
+        }
+        window.alert(union(arrayA,arrayB));
+
+
+
+    </script>
+</body>
+</html>

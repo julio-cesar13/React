@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function experiencia(ano){
+            let nivel;
+            if(ano < 1){
+                nivel = 'Junior';
+            }else if(ano < 3){
+                nivel = 'Pleno'
+            }else if(ano < 6){
+                nivel = 'Senior';
+            }
+            else{
+                nivel = 'Grão Mestre Jedi';
+            }
+
+            return nivel;
+        }
+
+
+        var anos_estudo = 9;
+        window.alert(`A seu nivel é de ${experiencia(anos_estudo)}`);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var maior = (array) =>{
+            let maior = 0;
+            console.log(array);
+            for(let i = 0; i < array.length; i++){
+               if(array[i].length > array[maior].length){
+                    maior = i;
+                    console.log(maior)
+                }
+            }
+            return maior;
+        }
+        var array = [];
+        var num = prompt("Coloque o numero no array(Digite f se quiser encerrar)");
+
+        let i = 0;
+        while(num!= 'f'){
+            array[i] = num;
+            i++;
+            num = prompt("Digite a palavra a ser colocada no array(Digite f se quiser encerrar)");
+            
+            
+        }
+
+        window.alert(`A maior string  é ${array[maior(array)]}`);
+    </script>
+</body>
+</html>

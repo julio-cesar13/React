@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function contar_caracter(word, char){
+           let cont = 0;
+           for(let i =0; i < word.length; i++){
+                if(word[i] == char){
+                    cont++;
+                }
+           }
+
+           return cont;
+        }
+
+        var word = prompt("Digite a palavra");
+        var char = prompt("Digite o caracter a ser contado");
+        window.alert(`O numero de ${char} em ${word} é ${contar_caracter(word,char)}`)
+
+    </script>
+</body>
+</html>

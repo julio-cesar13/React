@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pares(x,y){
+            let array = [];
+            let cont = 0;
+            if( x < y ){
+                for(let i = x + 1; i < y; i++){
+                    if(i%2==0){
+                        array[cont++] = i;
+                    }
+                }
+            }
+            else if( x > y ){
+                for(let i = x - 1; i > y; i--){
+                    if(i%2==0){
+                        array[cont++] = i;
+                    }
+                }
+            }
+            else{
+                return -1;
+            }
+
+            return array;
+        }
+
+        var x = Number(prompt("Digite o valor inicial do intervalo"));
+        var y = Number(prompt("Digite o valor final do intervalo"));
+
+        window.alert(`Os pares entre ${x} e ${y} são ${pares(x,y)}`)
+    </script>
+</body>
+</html>

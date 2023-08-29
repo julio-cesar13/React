@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function contar_vogal(word){
+        word = word.toLowerCase().normalize("NFD");
+        var cont = 0;
+         for(let i =0; i < word.length; i++){
+            console.log(word[i]);
+            if(word[i] == 'a' || word[i] == 'e' || word[i] =='i'|| word[i] == 'o' || word[i] =='u')
+            {
+                cont++;
+            }
+         }
+         return cont;
+       }
+       var word = prompt("Digite a palavra");
+       window.alert(`${contar_vogal(word)}`);
+
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function maior(array){
+            let maior = Number(array[0]);
+            for(let i = 0; i < array.length; i++){
+               if(Number(array[i]) > maior){
+                    maior = Number(array[i]);
+                }
+            }
+            return maior;
+        }
+        var array = [];
+        var num = prompt("Coloque o numero no array(Digite f se quiser encerrar)");
+
+        let i = 0;
+        while(num!= 'f'){
+            array[i] = num;
+            i++;
+            num = prompt("Coloque o numero no array(Digite f se quiser encerrar)");
+            
+            
+        }
+
+        window.alert(`O maior valor é ${maior(array)}`);
+    </script>
+</body>
+</html>

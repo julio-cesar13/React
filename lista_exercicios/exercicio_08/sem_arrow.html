@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function montante(inicial,taxa, meses){
+            return inicial*(Math.pow((1 + taxa),meses));
+        }
+
+        var capital_inicial = prompt("Digite o capital inicial do investimento");
+        var taxa_de_juros = prompt("digite a taxa de juros");
+        var tempo = prompt('digite o tempo em meses');
+
+        window.alert(`O montante é ${montante(1000,0.05,4).toFixed(2)}`);
+
+    </script>
+</body>
+</html>

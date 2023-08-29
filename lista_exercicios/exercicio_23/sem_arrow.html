@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function enderecar(nome,endereco){
+            let str = `O ${nome}  mora em ${endereco.cidade} / ${endereco.uf}, no bairro ${endereco.bairro}, na ${endereco.rua}, nº ${endereco.numero}.`
+            return str;
+        }
+        var endereco = { 
+            rua: "Av do CPA", 
+            numero: 1293, 
+            bairro: "Jardim Cuiabá", 
+            cidade: "Cuiabá", 
+            uf: "MT" 
+        };
+
+        window.alert(enderecar('usuario',endereco));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function positivos(array){
+            let array_positivos = [];
+            let cont_positivos = 0;
+            for(let i = 0; i < array.length; i++){
+               if(Number(array[i]) >= 0){
+                    array_positivos[cont_positivos++] = Number(array[i]);
+                }
+            }
+            return array_positivos;
+        }
+        var array = [];
+        var num = prompt("Coloque o numero no array(Digite f se quiser encerrar)");
+
+        let i = 0;
+        while(num!= 'f'){
+            array[i] = num;
+            i++;
+            num = prompt("Coloque o numero no array(Digite f se quiser encerrar)");
+            
+            
+        }
+
+        window.alert(`A vetor só com positivos ${positivos(array)}`);
+    </script>
+</body>
+</html>

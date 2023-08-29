@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function finonacci(){
+            let start = 0;
+            let prox = 1
+            let array = [];
+            array[0] = 1;
+            for(let i = 1; i < 10; i++){
+               array[i] = start + prox;
+               start = prox;
+               prox = array[i];
+            }
+            return array;
+        }
+
+        window.alert(`sequencia de fibonacci ${finonacci()}`);
+    </script>
+</body>
+</html>
